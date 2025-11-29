@@ -1,0 +1,74 @@
+4.Course Content-AWS Solutions Architect Associate:
+-------------------------------------------------
+1.Account and Security:
+	-IAM: Identity and Access Management
+	learn about: creating users, Roles, Policies, MFA
+2.Compute:
+	-EC2: Elastic Compute Cloud (virtual Server)
+	-ELB: Elastic load balancer (Traffic Distribution)
+	-EC2 Autoscaling: Scaling policy add or remove servers automatically
+	-Lambda: serverless
+3.Storage:
+	-S3: simple storage service (object storage)
+	-EBS: Elastic Block store only for EC2
+	-EFS: Elastic file system (File sharing)
+4.Networking:
+	-VPC: virtual private cloud
+	learn about: creating subnets, route tables, internet gateway, NAT
+	-Cloud Front-CDN(content delivery network)
+	-Route 53 (Domain registration	
+5.Databases:
+	-RDS(Relational database) SQL
+	-DynamoDB NoSQL
+6.Monitoring services:
+	-Cloud trail (Tracking users activity)
+	-Cloud watch (triggering alarm)
+	-SNS (Simple Notification service
+7.Three Tier Architecture
+	-Web servers
+	-App servers
+	-Database servers
+	
+Topic 1: Account and security:
+----------------------------
+IAM: Identity and Access Management
+
+What is Root user and IAM User ?
+
+Root user:
+.always used to login email adress, password and MFA
+.Root user have full acccess
+.Root user will create IAM user
+.Root user will assign permission to IAM users and also revoke anytime
+.Root user will create group for everyone
+
+
+IAM user:
+.user always login using link(12digit account number), username, password, MFA
+.IAM user have limited permissions
+
+Note:
+AWS never ever sugggest root account for day-to-day-interactions
+
+Project:
+--------
+Team lead: Root User
+Team members: IAM users
+Two users: user-1 and user-2
+Aws serices using : 3 services
+
+1.Storage----------user-1
+2.EC2 server-------user-1
+3.Lambda serverless--user-2
+
+User Groups : collection IAM users
+Group: admin access
+
+
+user-1 login details:
+
+https://008971655797.signin.aws.amazon.com/console
+
+user-1
+
+iG*l8a|$
