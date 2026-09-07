@@ -568,29 +568,33 @@ Creating users:
 	C)20413: date when the password was last changed
 	d)0:Minimum days between password changes
 	e)99999: Maximum days before password expires
-	f)7: Warining period before password ecpiry
+	f)7: Warining period before password expiry
 	g)::: = inactivity or account expiry
 	
 Setting and managing passwords:
-	.passwd: set or change user password (Ex: psswd shiva/kumar)
-	
+	.passwd: set or change user password (Ex: passwd shiva/kumar)
+
 logging to account using username and password:
 	.su username
+
+To exit from the specific user:
+ 	.ctrl+d
 	
 To view all users:
 	.cat /etc/shadow
 	.cat /etc/passwd
-	
+		
+Viewing user information:
+	.id: show users UID and group IDs (Ex: id shiva)
+
 Deleting Users:
 	.userdel: delete user (Ex: userdel shiva/kumar)
 	.deluser: Delete user and thier files (Ex: deluser shiva/kumar)
-	
-Viewing user information:
-	.id: show users UID and group IDs (Ex: id shiva)
+
 
 Group management:
 -----------------
 	.groupadd: Adding new group (ex: groupadd groupname)
-	.cat /etc/group: checking group exit or not
+	.cat /etc/group: checking group exist or not
 	.usermod: Add user to a group (ex: usermod -aG groupname username)
-	.groupdel: Delete group (ex: group
+	.groupdel: Delete group (ex: groupdel groupname)
