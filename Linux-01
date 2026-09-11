@@ -598,3 +598,57 @@ Group management:
 	.cat /etc/group: checking group exist or not
 	.usermod: Add user to a group (ex: usermod -aG groupname username)
 	.groupdel: Delete group (ex: groupdel groupname)
+
+Shell Scripting:
+Bash shell scripting refers to writing series of commands for linux shell, known as the BASH SHELL
+BASH = Bourne again shell
+Bash used in a sequence to automate tasks or perform complex operations
+Bash is defualt shell for linux for most like operating systems
+
+Key Aspects of Bash shell scripting:
+------------------------------------
+1.Scripting Lanaguage: bash scripting uses the bash shell as an interpreter(#!/usr/bin/bash)
+to execute commands written in a script file these script can be used for wide range of purpose, 
+from simple file manupulation to more complex task like system admin or automation of repetitive
+task.
+
+2.Syntax: Bash script are written using shell commands, control structures (like loops, and conditions),
+variables, functions, and comments.
+the syntax is similar to other programming languages but toilored specially for interacting
+with shell environment
+
+3.Automation:
+One of the primary uses of Bash scripting is automation.By writing scripts, admins and users
+can automate routine task,
+such as:
+File backups
+Log file analysis
+software installations
+system monitoring and more
+
+Note:This automation saves the time and reduces human errors
+
+4.#!/usr/bin/bash: shebang interpreter path, first line of the shell scripting
+shell file extension is .sh
+
+5.Shell file execution commands:
+To Run or Execute shell file
+a.sh filename.sh
+b.bash filename.sh
+c. ./filename.sh  (but should give execute permission to file)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
